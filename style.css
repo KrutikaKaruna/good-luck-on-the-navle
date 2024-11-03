@@ -16,6 +16,7 @@ html, body{
     width: 100%;              /* Full-width */
     overflow: hidden;
     box-sizing:border-box;
+    flex-wrap:wrap;
 }
 .column{
     flex:1;
@@ -161,4 +162,36 @@ html, body{
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+#video-player,#video-player-2{
+    width:60vw;
+    height:50vh;
+    border-radius:1em;
+}
+.make-space-bottom{
+    margin-bottom:2em;
+}
+.banner-img img{
+    width:100%;
+    border-radius:10px;
+}
+.banner-wrapper-img{
+    margin:20px 10px;
+    border-radius:10px;
+    overflow: hidden;
+}
+@media only screen and (max-width: 600px) {
+#message-wrapper,.max-width-60{
+    max-width:100%;   
+}
+.section-heading{
+    padding:0 10px;
+}
+#landing-section .sub-section{
+    height:unset;
+}
+#video-player,#video-player-2{
+    width:calc(100%);
+}
+
 }

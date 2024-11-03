@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
     <div id="landing-section" class="section">
@@ -15,11 +18,9 @@
             <div id="message-wrapper">
                 <div id="landing-message" class="urbanist-semibold">
                     <h2>To the class of '25</h2>
-                    <h1>We wish you the best of luck!</h1>
-                    <h2>For your exams</h2>
+                    <h1>Good luck on the NAVLE!</h1>
                 </div>
                 <div id="landing-subtitle" class="urbanist-regular banner-message-small">
-                    <p>Scroll to down to read the messages from your professors</p>
                     <p id="down-arrow">&darr;</p>
                 </div>
             </div>
@@ -28,12 +29,19 @@
     </div>
     <div class="section">
         <div class="section-heading urbanist-semibold">Click play!</div>
-        <div class="section-subtitle urbanist-regular">It's filled with love</div>
         <div class="sub-section">
-            <div class="banner-wrapper-center max-width-60 border-wrap">
-                <div class="bg-blue fill-space">
+            <div class="banner-wrapper-center border-wrap make-space-bottom">
+                <video id="video-player" class="bg-blue" controls>
+                    <source src="video-1.MOV" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video> 
                 </div>
-            </div>
+                <div class="banner-wrapper-center border-wrap">
+                    <video id="video-player-2" class="bg-blue" controls>
+                        <source src="video-2.MOV" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video> 
+                    </div>
         </div>
     </div>
     <div class="section">
@@ -59,7 +67,11 @@
                     
                 </div>
                 
-                
+                <div class="banner-wrapper-img">
+                    <div class="banner-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5-ZOsSzocDP_DkPaLIyZStPilepSxlpKpsQ&s" alt="">
+                    </div>
+                </div>
                 <div class="banner-wrapper bg-pale-yellow">
                     <div class="author-wrapper-left">
                         <p class="urbanist-semibold author-name">Dr. Carely Lulo, DVM</p>
@@ -111,6 +123,17 @@
                     </div>
                     
                 </div>
+                <div class="banner-wrapper bg-light-blue">
+                    <div class="author-wrapper-left">
+                        <p class="urbanist-semibold author-name">Dr. Hlusko</p>
+                    </div>
+                    <div class="banner-message-wrapper">
+                        <p class="banner-message urbanist-semibold">Just a quick note to let you know the AUCVM faculty are thinking of you and sending you all the positive vibes as you prepare to take NAVLE.
+                            We are all so proud of you regardless of the outcome. Be confident, get plenty of rest , and remember to breathe.Best of luck. You got this!!!
+                        </p>
+                    </div>
+                    
+                </div>
             </div>
             <div class="column">
                 <div class="banner-wrapper bg-orange">
@@ -155,4 +178,26 @@
         </div>
     </div>
 </body>
+<script>
+    confetti({
+  particleCount: 100,
+  startVelocity: 30,
+  spread: 360,
+  origin: {
+    x: Math.random(),
+    // since they fall down, start a bit higher than random
+    y: Math.random() - 0.2
+  }
+});
+confetti({
+  particleCount: 100,
+  startVelocity: 30,
+  spread: 360,
+  origin: {
+    x: Math.random(),
+    // since they fall down, start a bit higher than random
+    y: Math.random() - 0.2
+  }
+});
+</script>
 </html>
