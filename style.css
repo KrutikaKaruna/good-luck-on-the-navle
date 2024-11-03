@@ -1,0 +1,164 @@
+html, body{
+    padding:0;
+    margin:0;
+}
+.section{
+}
+#landing-section .sub-section{
+    height: 100vh; 
+    align-items: center;
+}
+.sub-section{
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: stretch;      /* Center vertically */
+    padding: 5em 10px 5em 10px;
+    width: 100%;              /* Full-width */
+    overflow: hidden;
+    box-sizing:border-box;
+}
+.column{
+    flex:1;
+}
+#message-wrapper h1{
+    font-size: 4em;
+    margin-top:0em;
+    margin-bottom:0em;
+}
+#message-wrapper h2{
+    margin-bottom:0;
+    margin-top:0;
+}
+#message-wrapper{
+    width: fit-content;
+    max-width: 50%;
+    padding-left:1em;
+    margin-left:6px;
+    position:relative;
+}
+#border-line{
+    width:6px;
+    height:calc(100vh - 5em);
+    background-color: lightgray;
+    position: absolute;
+    left:-6px;
+    top:0;
+}
+#down-arrow{
+    font-size:3em;
+    margin:0;
+}
+.max-width-50{
+    max-width: 50%;
+}
+.max-width-60{
+    max-width: 60%;
+}
+.banner-wrapper-center{
+    padding:1em;
+    margin:auto;
+    border-radius:2em;
+}
+.banner-wrapper{
+    padding:4em;
+    width:fit-content;
+    margin:20px 10px;
+    border-radius:10px;
+}
+.banner-message-big{
+    font-size:2em;
+}
+.banner-message{
+    font-size: 2em;
+    
+}
+.banner-message-small{
+    font-size: 1.5em;
+    
+}
+.author-wrapper{
+    text-align: right;
+    max-width: fit-content;
+    position: relative;
+    margin: 0 0 0 auto;
+}
+.author-wrapper p{
+    margin:0 0 0 auto;
+    font-size: 1.2em;
+}
+.author-wrapper-left .author-name{
+    font-size:1.2em;
+}
+.author-name{
+    max-width: fit-content;
+    font-size: 1.2em;
+}
+.width-70{
+    width:70%;
+}
+.width-30{
+    width:30%;
+}
+.bg-orange{
+    background:rgba(255,87,15,1);
+    color:rgba(244,244,244,1)
+}
+.bg-light-blue{
+    background: rgba(223,239,252,1);
+    color:rgba(39,39,39,1)
+}
+.bg-yellow{
+    background-color: rgba(255,207,84,1);
+    color: rgba(39,39,39,1);
+}
+.bg-pale-yellow{
+    background-color: rgba(255,249,191,1);
+    color:rgba(39,39,39,1)
+}
+.bg-green{
+    background-color: #10443a;
+    color: rgba(244,244,244,1)
+}
+.bg-beige{
+    background-color: #F8EDE3;
+    color:rgba(39,39,39,1)
+}
+.bg-blue{
+    background-color: rgba(1,73,124,1);
+    color:rgba(219,255,191,1);
+}
+.section-heading{
+    color:rgba(39,39,39,1);
+    text-align:center;
+    font-size:4em;
+    margin-top:2em;
+}
+.section-subtitle{
+    color:rgba(39,39,39,1);
+    text-align:center;
+    font-size:2em;
+    margin-top:0.4em;
+}
+.max-width-75{
+    max-width:75%
+}
+.border-wrap{
+    border: 2px solid rgba(39,39,39,1);
+}
+.fill-space{
+    width:50vw;
+    height:50vh;
+    border-radius: 1em;
+}
+.urbanist-semibold {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.urbanist-regular {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
